@@ -7,7 +7,7 @@ int A[2][2]={{1,2},{3,4}};
 int B[2][2]={{5,6},{7,8}};
 
 const int N = 2;
-void kernel(int y,int x);
+void kernel(int y,int x)
 {
 
   R[y][x]=A[y][0]*B[0][x]+A[y][1]*B[1][x];
