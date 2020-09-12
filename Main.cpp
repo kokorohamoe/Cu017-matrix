@@ -15,7 +15,7 @@ void kernel(int y,int x)
 }  
 
 
-int main(int argc,char *argv)
+int main(int argc,char *argv[])
 {
     
     std::thread a00=std::thread(kernel,0,0);
