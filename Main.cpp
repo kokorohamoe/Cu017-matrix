@@ -1,7 +1,7 @@
 //Cu017_matrix
 #include <iostream>
 #include <thread>
-#include <vecor>
+#include <vector>
 
 int R[2][2];
 int A[2][2]={{1,2},{3,4}};
