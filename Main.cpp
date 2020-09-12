@@ -19,7 +19,7 @@ void kernel(int y,int x)
 int main(int argc,char *argv[])
 {
     std::vector<std::thread> mt(4);
-    volatile m = 1;
+    volatile int m = 1;
     if(m==0){
         mt[0]=std::thread(kernel,0,0);
         mt[1]=std::thread(kernel,0,1);
