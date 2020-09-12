@@ -26,7 +26,7 @@ int main(int argc,char *argv[])
     a01.join();
     a10.join();
     a11.join();
-    std::cout << R[0][0] <<" " <<R[1][1]<<std::endl;
+    std::cout << R[0][0] <<" " <<R[0][1]<<std::endl;
     std::cout << R[1][0] <<" " <<R[1][1]<<std::endl;
   return 0;
 }
