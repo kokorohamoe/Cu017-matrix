@@ -34,5 +34,6 @@ int main(int argc,char *argv[])
     for(std::thread &t:mt) t.join();
     std::cout << R[0][0] <<" " <<R[0][1]<<std::endl;
     std::cout << R[1][0] <<" " <<R[1][1]<<std::endl;
+    std::cout << m <<std::endl;
   return 0;
 }
