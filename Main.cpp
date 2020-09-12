@@ -19,10 +19,17 @@ void kernel(int y,int x)
 int main(int argc,char *argv[])
 {
     std::vector<std::thread> mt(4);
+/*
     mt[0]=std::thread(kernel,0,0);
     mt[1]=std::thread(kernel,0,1);
     mt[2]=std::thread(kernel,1,0);
     mt[3]=std::thread(kernel,1,1);
+*/
+    for(std::thread &t:mt) {
+        int i = &t - &mt[0];
+        mt[i]=std::thread(kernel,i/2,i%2);
+        
+    }
     for(std::thread &t:mt) t.join();
     std::cout << R[0][0] <<" " <<R[0][1]<<std::endl;
     std::cout << R[1][0] <<" " <<R[1][1]<<std::endl;
